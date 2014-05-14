@@ -7,10 +7,10 @@ define('ROOT_FOLDER',dirname(dirname(__FILE__)));
 $capsule = new Capsule;
 $capsule->addConnection(array(
 	'driver'    => 'mysql',
-	'host'      => 'localhost',
-	'database'  => 'pfe',
-	'username'  => 'root',
-	'password'  => 'root',
+	'host'      => DB_HOST,
+	'database'  => DB_NAME,
+	'username'  => DB_USERNAME,
+	'password'  => DB_PASSWORD,
 	'charset'   => 'utf8',
 	'collation' => 'utf8_unicode_ci',
 	'prefix'    => ''
