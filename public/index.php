@@ -1,10 +1,12 @@
 <?php
 require_once "../vendor/autoload.php";
+require_once "../system/bootstrap.php";
 require_once "../app/config.php";
-require_once "../app/helpers.php";
-require_once "../app/baseController.php";
-require_once "../app/baseModel.php";
-require_once "../app/view.php";
+require_once "../system/helpers.php";
+require_once "../system/baseModel.php";
+require_once "../system/migrations.php";
+require_once "../system/baseController.php";
+require_once "../system/view.php";
 
 $accessed_uri = $_SERVER['REQUEST_URI'];
 $accessed_uri = substr($accessed_uri, 1);

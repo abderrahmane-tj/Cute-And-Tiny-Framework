@@ -1,5 +1,6 @@
 <?php
 
+
 function ppre(){
 	$args = func_get_args();
 	foreach($args as $arg){
