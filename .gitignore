@@ -1,4 +1,4 @@
 vendor/
 .idea/
 composer.lock
-app/config.php
+# app/database.php
