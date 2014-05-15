@@ -1,4 +1,5 @@
 <?php
+
 require_once "../vendor/autoload.php";
 require_once "../app/config.php";
 require_once "../app/database.php";
@@ -32,6 +33,7 @@ if(!$is_root){
     $parameter = $uriParts[2];
   }
 }
+
 
 $classDefinitionFile = sprintf('../app/controllers/%sController.php',
   $controllerName);
