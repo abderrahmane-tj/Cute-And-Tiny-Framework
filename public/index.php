@@ -1,6 +1,7 @@
 <?php
 require_once "../vendor/autoload.php";
 require_once "../app/config.php";
+require_once "../app/database.php";
 require_once "../system/bootstrap.php";
 require_once "../system/helpers.php";
 require_once "../system/baseModel.php";
