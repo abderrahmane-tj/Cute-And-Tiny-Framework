@@ -5,7 +5,9 @@ require_once "../app/database.php";
 require_once "../system/bootstrap.php";
 require_once "../system/helpers.php";
 require_once "../system/baseModel.php";
-require_once "../system/migrations.php";
+if(USE_MIGRATIONS){
+	require_once "../system/migrations.php";
+}
 require_once "../system/baseController.php";
 require_once "../system/view.php";
 
