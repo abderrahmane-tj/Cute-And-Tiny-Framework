@@ -1,12 +1,8 @@
 <?php
 
 class pageController extends baseController{
-	public function index(){
-		$user = Users::find(1);
-
-		$this->view->title = 'Hi';
-		$this->view->load('page/index',array(
-			'user' => $user
-		));
-	}
+    function index(){
+        $this->view->title = 'Welcome';
+        $this->view->load('page/index');
+    }
 }

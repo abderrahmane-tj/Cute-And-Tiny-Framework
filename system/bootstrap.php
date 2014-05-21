@@ -1,6 +1,5 @@
 <?php
 use Illuminate\Database\Capsule\Manager as Capsule;
-use \Illuminate\Database\Schema\Blueprint;
 
 define('ROOT_FOLDER',dirname(dirname(__FILE__)));
 
@@ -20,7 +19,10 @@ $capsule->setAsGlobal();
 $capsule->bootEloquent();
 
 function do_autoload($class_name){
-	include_once ROOT_FOLDER.'/app/models/'.$class_name.'.php';
+  $pathToFile = ROOT_FOLDER.'/app/models/'.$class_name.'.php';
+  if(file_exists($pathToFile)){
+    include_once $pathToFile;
+  }
 }
 
 spl_autoload_register('do_autoload');
