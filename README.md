@@ -1,1 +1,1 @@
-### :^)
+Tiny footprint PHP MVC prototype framework, using [`spl_autoload_register`](https://www.php.net/manual/en/function.spl-autoload-register.php) for automatic route to Controller mapping ORM with https://github.com/illuminate/database
